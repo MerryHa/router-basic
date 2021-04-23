@@ -4,9 +4,9 @@ import Topic from './topic';
 
 const Topics = (props) => {
     const [topics, setTopics] = useState([
-        { id: 1, title: 'Route', description: 'Route is ...' },
-        { id: 2, title: 'Link', description: 'Link is ...' },
-        { id: 3, title: 'Switch', description: 'Switch is ...' },
+        { id: 'route', title: 'Route', description: 'Route is ...' },
+        { id: 'link', title: 'Link', description: 'Link is ...' },
+        { id: 'switch', title: 'Switch', description: 'Switch is ...' },
     ]);
     return (
         <div>
