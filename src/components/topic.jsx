@@ -1,10 +1,11 @@
+import QueryString from 'qs';
 import React, { useEffect, useState } from 'react';
-import { useParams, useRouteMatch } from 'react-router';
+import { useLocation, useParams } from 'react-router';
 
 const Topic = ({ topics }) => {
     const params = useParams();
-    const match = useRouteMatch();
-    console.log('topic', match);
+    const location = useLocation();
+    const queryData = QueryString.parse(location.search, { ignoreQueryPrefix: true });
     const [topic, setTopic] = useState({
         title: 'Sorry',
         description: 'Not Found',
@@ -19,10 +20,11 @@ const Topic = ({ topics }) => {
     }, [topics, params]);
 
     return (
-        <>
+        <div className='topic'>
             <h3>{topic.title}</h3>
             <p>{topic.description}</p>
-        </>
+            {location && <p>{location.search}</p>}
+        </div>
 
     );
 }

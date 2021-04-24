@@ -1,4 +1,118 @@
+*{
+  font-family:'Ubuntu', sans-serif;
+  color: rgb(230, 227, 218);
+}
+body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+li{
+  list-style:none;
+  margin: 1em;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  border:1px solid white;
+  border-radius: 1em;
+  padding: 0.3em 0.6em;
+  color:rgb(88, 162, 231);
+}
+header{
+  font-size: 2.5rem;
+}
+.app{
+  width: 30rem;
+  height: 20rem;
+  padding: 3em;
+  border-radius: 2.5em;
+  text-align: center;
+  background-color: rgb(29, 29, 31);
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+.nav li{
+  margin: 0.5em;
+}
+.nav a{
+  padding: 0.5em 1em;
+}
+.topics{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(119, 49, 119, 0.479);
+  padding: 0.3em 1em 2em 1em ;
+  border-radius: 1.5rem;
+}
+.topics h1{
+  margin: 0.5em 0;
+}
+.topics-cotainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topics ul{
+  width: 12rem;
+}
+.topic a{
+  width: 100%;
+}
+.topic{
+  display: flex;
+  height: 8rem;
+  padding: 0 1em;
+  margin-left: 1em;
+  border-radius: 1em;
+  width: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.topic p{
+  text-align: start;
+}
+.topic *{
+  margin: 0;
+}
+.my-page,.home{
+  margin-top: 5em;
+}
+.my-page p{
+  font-size: 1.2rem;
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+label{
+  font-size: 1.2rem;
+  margin-right: 0.5em;
+}
+input{
+  color: rgb(31, 29, 29);
+}
+a{
+  transition: all 300ms ease-in;
+}
+a:hover{
+  background-color: rgb(160, 76, 132);
+}
+a:focus{
+  border:0.15rem solid rgba(255, 255, 255, 0.596);
+}
 .active{
-  background-color: rgb(255, 136, 136);
+  background-color: rgb(122, 43, 96);
   text-decoration: none;
 }
